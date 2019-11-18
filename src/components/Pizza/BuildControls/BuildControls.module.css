@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap&subset=latin-ext');
+
+@media(min-width: 500px) and (min-height: 400px){
+    h4 {
+        font-size: 25px
+    }
+}
+
+@media(min-width: 500px) and (min-height: 401px){
+    h4 {
+        font-size: 30px
+    }
+}
+
+@media(min-width: 1000px) and (min-height: 700px){
+    h4 {
+        font-size: 35px
+    }
+}
+
+h4{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px
+}
+
+.BuildControls {
+    width: 100%;
+    background-color: 3CF8F2E;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0;
+}
+
+@media(min-width: 1200px){
+    .BuildControls {
+        width: 40%
+    }
+}
+
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.OrderButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    text-shadow:0px 0px 10px #2f6627;
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.6s ease;
+}
+
+
+.OrderButton:active {
+    background-color:#5cbf2a;
+    
+}
+
+.OrderButton:hover {
+    background-color:#a4ecb7;
+    transform: perspective(10px) translateZ(1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+
+}
+
+.OrderButton:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+    text-shadow:0px 0px 0px;
+}
+
+.OrderButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

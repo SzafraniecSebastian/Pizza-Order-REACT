@@ -1,0 +1,38 @@
+.Button {
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    width: 35%;
+    min-width: 115px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    transition: all 0.6s ease;
+}
+
+.Button:hover {
+    /* color: black; */
+    transform: perspective(10px) translateZ(1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Success {
+    background-color: #4ef18f;
+    border-radius: 20px 20px;
+    color: white
+}
+
+.Danger {
+    background-color: #f30000;
+    border-radius: 20px 20px;
+    color: white
+}

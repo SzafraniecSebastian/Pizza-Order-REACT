@@ -1,0 +1,20 @@
+.Content {
+    margin-top: 72px;
+}
+
+@media(min-width: 1300px){
+    .Content {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+@media(min-width: 1500px){
+    .Content {
+        max-width: 70%;
+    }
+}
